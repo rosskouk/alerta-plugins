@@ -7,7 +7,7 @@ setup(
     version=version,
     description='Alerta routing rules for plugins',
     url='https://github.com/rosskouk/alerta-plugins.git',
-    license='Apache License 2.0',
+    license='MIT',
     author='Ross Stewart',
     author_email='rosskouk@gmail.com',
     packages=find_packages(),
