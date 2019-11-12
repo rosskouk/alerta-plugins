@@ -12,7 +12,7 @@ setuptools.setup(
     license='Apache License 2.0',
     author='Nick Satterly',
     author_email='nick.satterly@theguardian.com',
-    py_modules=['routing'],
+    py_modules=['alerta_routing'],
     install_requires=[
         'requests',
         'alerta-server'
@@ -21,7 +21,7 @@ setuptools.setup(
     zip_safe=False,
     entry_points={
         'alerta.routing': [
-            'rules = routing:rules'
+            'rules = alerta_routing:rules'
         ]
     }
 )
