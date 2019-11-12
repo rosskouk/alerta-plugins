@@ -1,14 +1,11 @@
-# Example plugin routing rules file
+# Alerta plugin routing rules
 
-
-#def rules(alert, plugins):
-
-#    if alert.severity == 'debug':
-#        return []
-#    else:
-#        return [plugins['reject']]
-
+# Ensure alerts have occurred at least 3 time and are not informational before alerting
 def rules(alert, plugins):
 
-    print(plugins)
-    return plugins.values()
+    if alert.duplicate_count <= 2:
+        return [plugins['reject']]
+    elif alert.severity not in ['informational']:
+        return [plugins['reject'], plugins['telegram']]
+    else:
+        return [plugins['reject']]
