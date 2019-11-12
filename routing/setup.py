@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
-version = '0.0.1'
+version = '1.0.0'
 
 setup(
     name="alerta-routing",
     version=version,
     description='Alerta routing rules for plugins',
-    url='https://github.com/rosskouk/docker-image-alerta',
+    url='https://github.com/rosskouk/alerta-plugins.git',
     license='Apache License 2.0',
     author='Ross Stewart',
     author_email='rosskouk@gmail.com',
