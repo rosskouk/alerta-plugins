@@ -1,27 +1,23 @@
-#!/usr/bin/env python
-
-import setuptools
+from setuptools import setup, find_packages
 
 version = '0.0.1'
 
-setuptools.setup(
-    name='alerta-routing',
+setup(
+    name="alerta-routing",
     version=version,
     description='Alerta routing rules for plugins',
-    url='https://github.com/alerta/alerta-contrib',
+    url='https://github.com/rosskouk/docker-image-alerta',
     license='Apache License 2.0',
-    author='Nick Satterly',
-    author_email='nick.satterly@theguardian.com',
-    py_modules=['alerta_routing'],
-    install_requires=[
-        'requests',
-        'alerta-server'
-    ],
+    author='Ross Stewart',
+    author_email='rosskouk@gmail.com',
+    packages=find_packages(),
+    py_modules=['routing'],
+    install_requires=[],
     include_package_data=True,
-    zip_safe=False,
+    zip_safe=True,
     entry_points={
         'alerta.routing': [
-            'rules = alerta_routing:rules'
+          'rules = routing:rules'
         ]
     }
 )
