@@ -3,6 +3,9 @@
 # Ensure alerts have occurred at least 3 time and are not informational before alerting
 def rules(alert, plugins):
 
+    print('Alert attributes: \n\n')
+    print(dir(alert))
+    print('\n\n')
     print('\n\nAlert Dup Count: ' + str(alert.duplicate_count))
     print('\n\nAlert Severity: ' + str(alert.severity))
     if alert.duplicate_count:
