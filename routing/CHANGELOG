@@ -1,0 +1,51 @@
+v1.0.0
+======
+- 73b5699 
+    - Added license details 
+    - Made debugging less verbose
+- f2ff7cf   
+    - Updated README.md
+- ccac13b   
+    - Rewrote routing rules as duplicate_count is never set.
+
+v0.5.4
+======
+- 613f9af (origin/master, origin/HEAD, master) Merge pull request #6 from rosskouk/patch-v0.5.4
+- c513ab7 
+    - Added additional debugging to routing rules
+
+v0.5.3
+======
+- 4b97974 (tag: v0.5.3) Merge pull request #5 from rosskouk/patch-v0.5.3
+- 6145f82   
+    - Added debug statements to routing rules
+- e90bf33  
+    - Updated routing rules
+
+v0.5.0
+======
+- 3951374 (tag: v0.5.0) Merge pull request #2 from rosskouk/release-v1.0.0
+- f22b0bd   
+    - Added license details to README.md
+- cc1e855   
+    - Updated License
+- 61cd6ee   
+    - Create LICENSE
+- fa48506   
+    - Updated setup.py
+- 0dd9b4a   
+    - Added initial routing rules
+- f9c9d7b   
+    - Updated README.md
+- 134ed56   
+    - More testing
+- 43f8cd6   
+    - Renamed rules script
+- a278abf   
+    - Updated setup.py
+- f6df546   
+    - Added new version of setup.py from Alerta Contrib Official Repo
+- c36b78d   
+    - Inital testing version of routing plugin
+- 06d0399   
+    - Initial commit
